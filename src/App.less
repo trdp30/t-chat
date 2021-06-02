@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
-}
+@import "../node_modules/react-toastify/dist/ReactToastify.min.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text {
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center !important;
+  }
+  &-size {
+    &-normal {
+      font-size: 14px;
+    }
+    &-small {
+      font-size: 0.8em;
+    }
+    &-medium {
+      font-size: 1.2em;
+    }
+    &-large {
+      font-size: 1.4em;
+    }
+    &-big {
+      font-size: 2.5em;
+    }
+  }
+  &-color {
+    &-red {
+      color: red;
+    }
+    &-primary {
+      color: #2185d0;
+    }
+    &-white {
+      color: white !important;
+    }
+  }
+  &-weight {
+    &-bold {
+      font-weight: 600;
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login {
+  &-container {
+    height: ~"calc(100vh - 49.09px)";
+    background-color: #b4bef5;
   }
-  to {
-    transform: rotate(360deg);
+  &-wrapper {
+    height: ~"calc(100vh - 319.09px)";
+    min-height: 443px;
+    .header {
+      font-size: 26px;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+    .description {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: sans-serif;
+    }
+    label {
+      font-size: 16px !important;
+      font-family: fangsong;
+    }
+  }
+}
+
+.button {
+  &-login {
+    width: 200px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+}
+
+body {
+  font-size: 14px !important;
+  background-color: #b4bef5 !important;
+}
+
+.app-container {
+  height: ~"calc(100vh - 49.09px)";
+}
+
+.padding {
+  &-no {
+    padding: 0 !important;
+    &-vertical {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+  &-top {
+    &-twelve {
+      padding-top: 12px;
+    }
+    &-big {
+      padding-top: 30px !important;
+    }
+  }
+  &-vertical {
+    &-large {
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.margin {
+  &-no {
+    margin: 0 !important;
+  }
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.profile-picture {
+  &-container {
+    background-color: #13ed4726;
+  }
+}
+
+.width {
+  &-full {
+    width: 100%;
+  }
+}
+
+.height {
+  &-full {
+    height: 100%;
+  }
+}
+
+.border-none {
+  border: none !important;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.nav-bar {
+  border-radius: 0 !important;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  &-container {
+    height: 49.09px;
+  }
+  .logo {
+    background-color: white !important;
+    border-radius: 0 !important;
   }
 }

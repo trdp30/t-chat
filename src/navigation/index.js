@@ -5,7 +5,6 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import ErrorBoundary from "./error-boundary";
 import Profile from "../screens/user/profile";
 import UpdateProfile from "../screens/user/update-profile";
-// import AppContainer from "../components/app-container";
 import NotFound from "../screens/not-found";
 import NavBar from "../components/nav-bar";
 
